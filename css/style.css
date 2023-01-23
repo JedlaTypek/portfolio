@@ -14,8 +14,9 @@ body{
     font-family: sans-serif;
 }
 main{
-    max-width: 1200px;
+    max-width: 1500px;
     margin:auto;
+    min-height: 93vh;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 15px;
@@ -39,8 +40,8 @@ footer{
     border-top-width: 2px;
     border-color: #ffffff;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 h2{
     color: white;
@@ -69,13 +70,18 @@ header div p{
     padding: 10px;
 }
 .skils p{
-    text-align: left;
+    text-align: center;
 }
 .skils p svg{
     margin-left: 10px;
     margin-right: 10px;
     height: 40px;
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.text-under-icons{
+    text-align: center;
+    border-top: #ffffff 2px solid;
+    padding-top: 10px;
 }
 .socials{
     position: absolute;
@@ -85,7 +91,7 @@ header div p{
     padding: 10px;
 }
 .socials p{
-    text-align: right;
+    text-align: center;
 }
 .socials p a{
     text-decoration: none;
@@ -113,7 +119,8 @@ header div p{
     flex-wrap: wrap;
 }
 .card{
-    width: 400px;
+    min-width: 400px;
+    width: 30%;
     margin: 20px;
     color: white;
 }
@@ -172,6 +179,9 @@ header div p{
 @media only screen and (max-width: 600px) {
     
     .skils{
+        display: none;
+    }
+    .text-skils{
         display: none;
     }
     .socials {
