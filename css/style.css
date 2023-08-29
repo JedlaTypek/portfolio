@@ -148,28 +148,11 @@ header div p{
     width:100%;
     margin: 0;
     padding: 0;
-}
-.card .text-hover{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 .card:hover img{
-    transition: all .3s ease-in-out;
-}
-.card:hover .text-hover{
-    transition: all .3s ease-in-out;
-    opacity: 1;
-}
-.card:hover img{
-    filter: brightness(80%)
+    filter: brightness(80%);
 }
 .napravo{
     display: flex;
